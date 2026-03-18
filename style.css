@@ -1,77 +1,77 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
-header {
+
+body {
+    background: #f4f6f9;
+}
+
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background: #111;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.left {
+    width: 35%;
+    background: #2c3e50;
     color: white;
-}
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-}
-nav ul li {
-    margin-left: 20px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-}
-nav ul li a:hover {
-    color: #00c3ff;
-}
-.hero {
-    height: 90vh;
-    background: linear-gradient(to right, #00c3ff, #ffff1c);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
     text-align: center;
-    color: #111;
 }
-.hero h1 {
-    font-size: 40px;
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     margin-bottom: 15px;
 }
-.hero p {
-    font-size: 18px;
+
+.title {
+    color: #bdc3c7;
     margin-bottom: 20px;
 }
-.btn {
-    padding: 12px 25px;
-    background: #111;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: 0.3s;
+
+.section {
+    margin-top: 20px;
+    text-align: left;
 }
-.btn:hover {
-    background: #333;
+
+.section h3 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
-.about {
-    padding: 60px 20px;
-    text-align: center;
+
+.section ul {
+    list-style: none;
 }
-.about h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
+
+.section ul li {
+    margin: 5px 0;
 }
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
+
+.right {
+    width: 65%;
+    padding: 30px;
+}
+
+.right .section h3 {
+    color: #2c3e50;
+}
+
+.right .section p {
+    margin-bottom: 5px;
+}
+
+.right .section span {
+    font-size: 14px;
+    color: gray;
 }
