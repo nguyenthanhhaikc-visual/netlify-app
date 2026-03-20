@@ -1,77 +1,73 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
 body {
-    background: #f4f6f9;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
 }
 
-.container {
+.cv {
+    width: 900px;
+    margin: 20px auto;
     display: flex;
-    max-width: 1000px;
-    margin: 40px auto;
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* LEFT */
 .left {
     width: 35%;
-    background: #2c3e50;
+    background: #1f4e79;
     color: white;
     padding: 20px;
-    text-align: center;
+}
+
+.left h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.left p {
+    font-size: 14px;
 }
 
 .avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.title {
-    color: #bdc3c7;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.section {
-    margin-top: 20px;
-    text-align: left;
+.avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
 }
 
-.section h3 {
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-.section ul {
-    list-style: none;
-}
-
-.section ul li {
-    margin: 5px 0;
-}
-
+/* RIGHT */
 .right {
     width: 65%;
     padding: 30px;
 }
 
-.right .section h3 {
-    color: #2c3e50;
-}
-
-.right .section p {
+.right h1 {
+    color: #1f4e79;
     margin-bottom: 5px;
 }
 
-.right .section span {
-    font-size: 14px;
+.right h3 {
     color: gray;
+    margin-top: 0;
+}
+
+.right h2 {
+    color: #1f4e79;
+    border-bottom: 2px solid #1f4e79;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.right p, .right li {
+    font-size: 14px;
+}
+
+ul {
+    margin-left: 20px;
 }
